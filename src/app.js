@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import Foo from './Foo';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -15,12 +17,6 @@ class App extends Component {
         <Foo name="otiai10" />
       </div>
     );
-  }
-}
-
-class Foo extends Component {
-  render() {
-    return <h2>My name is {this.props.name}.</h2>;
   }
 }
 
